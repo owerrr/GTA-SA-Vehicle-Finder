@@ -1,6 +1,7 @@
 # USAGE
 - Download repository
 - Unpack
+- Run setup.exe
 - Run sa_finder.exe
 
 # SCREENSHOTS
