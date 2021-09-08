@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="sa_finder.exe" version="1.0.0.0" publicKeyToken="63ae2847b4c93fc1" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Launcher" version="5.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Launcher.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Launcher.exe" size="15320">
+      <assemblyIdentity name="Launcher" version="5.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>ZuS8gmxxRMULV9xrveOW1jqwb/r2XicxZurnZ2L9yoM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="sa_finder.deps.json" size="419">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>wHWLQA1AeZsazitIhgJbONC8oHItjJ3gvi5OxnZHazE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="sa_finder.dll" size="15832">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>8e1r7wFcjIb25jEd0s/zZPsvxP1jlW5wqkVRvYvSgPI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="sa_finder.exe" size="143320">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Fw6PxCWObPx1q/XM+lIMk8KzSijEQDLvYjrdihjehMk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="sa_finder.runtimeconfig.json" size="154">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>NiDVPch7SqLL1QtcqAuqPjoBfZ04y3L2kORCla/DP3c=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-AKNOPI5\owr" issuerKeyHash="07473be2798312872bcd825f69c23f0899e384fc" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>zDxvAeM9CwSzubnqHHK3fn1z34yyfwvuFb4I66kqn8I=</DigestValue></Reference></SignedInfo><SignatureValue>gmrnsa39bo3CZJXcMs7ViwvzqaiOZbuRrrJRPe9ulSXPg8U7C9/QM79V7q48wdfcz7kufvSlrBfWcQDlQbPP8BGojcKT/w4XIDtJa5DUlpuTNlpETJ+8d+TX9yChscDwuzVGHLka3BuAuhQxJDkU5E29R65c6TPASEWOCePI2pQ=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>wCYwnfx7Lt4wneuWQwmdevoZPauoZoT2dB4k/oasNoBl2WxhpBrbFuYo4TckUmwUrnK/xoViR4DO6LaHB4T/5nh0t5CINhQX8JviSgq/qtkgcbIYPhQx7yr2cCjcyLce+AomDD1J/49o/M6YTAqce9gmdvzTKBq90AmhpLp70vU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="c29f2aa9eb08be15ee0b7fb28cdf737d7eb7721ceab9b9b3040b3de3016f3ccc" Description="" Url=""><as:assemblyIdentity name="sa_finder.exe" version="1.0.0.0" publicKeyToken="63ae2847b4c93fc1" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-AKNOPI5\owr</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>b7n2jGxQP8LjLnkwZGOm/zstoGCXW7+MWo3/f0Fs9PI=</DigestValue></Reference></SignedInfo><SignatureValue>ifpx6Yw9AnylZd/NCtCz4Cg6zpFKzqnskLRJNP3Uya3Oqf3EaMauaHA1Gg0nkvCKhl8uu44EwzwF59CMceZrUwc2ALii2M9aF569vehEeuUQz8CYfgs4VIfQ00G8KKFkNpO+ecv9EwyaoLkYjcfaZBBHxc/y7gmywGFkLYkvwv8=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>wCYwnfx7Lt4wneuWQwmdevoZPauoZoT2dB4k/oasNoBl2WxhpBrbFuYo4TckUmwUrnK/xoViR4DO6LaHB4T/5nh0t5CINhQX8JviSgq/qtkgcbIYPhQx7yr2cCjcyLce+AomDD1J/49o/M6YTAqce9gmdvzTKBq90AmhpLp70vU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB5TCCAU6gAwIBAgIQQrXlKKAMFIhM/vP3Ke3vnDANBgkqhkiG9w0BAQsFADAxMS8wLQYDVQQDHiYARABFAFMASwBUAE8AUAAtAEEASwBOAE8AUABJADUAXABvAHcAcjAeFw0yMTA5MDgyMTMzMDJaFw0yMjA5MDkwMzMzMDJaMDExLzAtBgNVBAMeJgBEAEUAUwBLAFQATwBQAC0AQQBLAE4ATwBQAEkANQBcAG8AdwByMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDAJjCd/Hsu3jCd65ZDCZ16+hk9q6hmhPZ0HiT+hqw2gGXZbGGkGtsW5ijhNyRSbBSucr/GhWJHgM7otocHhP/meHS3kIg2FBfwm+JKCr+q2SBxshg+FDHvKvZwKNzItx74CiYMPUn/j2j8zphMCpx72CZ2/NMoGr3QCaGkunvS9QIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAIQhh9sHEJEzLnpqXZMJV3sa4TdnJnHVo2YlNEuwBOp8LJER5OJNpvMesofEF0PoVmcGKlvAV3O5bAPVCRluh2mcB2TBHxMX3YK7wpqQj1i+SGmBGfiz51/E+ttKVtQGOJ2nVweje86KOX5vA24bGson8pOOxhZ7OkFPzTCABN9q</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
